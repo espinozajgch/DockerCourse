@@ -6,3 +6,16 @@ En esta rama se modifica docker compose con la imagen que se genera con el docke
 ademas se agrega un volumen para copiar el proyecto y se le indica una ruta que no debe modificar.
 
 tambien se utliza un command que sobreescribre el CMD dentro del docker file.
+
+Comando Utilizados
+
+### hace un build de los servicios en el directorio actual
+`docker-compose build`  
+
+### El nombre de la imagen suele ser <path>_<Service name>:latest
+
+#### Vuelve a crear la imagen del servicio app
+`docker-compose build <service name>`
+
+### inicia los servicios, y crea una imagen nueva en caso de que detecte cambios
+`docker-compose up -d` 
