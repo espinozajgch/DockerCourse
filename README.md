@@ -19,3 +19,6 @@ Comando Utilizados
 
 ### inicia los servicios, y crea una imagen nueva en caso de que detecte cambios
 `docker-compose up -d` 
+
+# Compose en equipo: override
+docker-compose.override.yml es un archivo que se encarga de sobreescribir tu configuración de docker-compose.yml , se puede usar para tener segura tu configuración y para no guardar los cambios en el repositorio de git.
